@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+#city-input {
+    width: 60%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+#search-btn {
+    padding: 12px 25px;
+    border: none;
+    background-color: #3498db;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+#search-btn:hover {
+    background-color: #2980b9;
+}
+
+.weather-info-container {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#city-name {
+    font-size: 2.5em;
+    margin: 0;
+    color: #34495e;
+}
+
+#condition {
+    font-size: 1.2em;
+    color: #7f8c8d;
+    margin-top: 5px;
+}
+
+.metrics {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.metric-card {
+    background-color: #ecf0f1;
+    padding: 20px;
+    border-radius: 10px;
+    flex-basis: 200px;
+    text-align: center;
+}
+
+.metric-card h3 {
+    margin: 0 0 10px 0;
+    color: #3498db;
+}
+
+.metric-card p {
+    font-size: 1.8em;
+    margin: 0;
+    font-weight: 700;
+}
+
+.chart-container {
+    position: relative;
+    height: 40vh;
+    width: 100%;
+}

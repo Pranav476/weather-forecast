@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Weather Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Live Weather Dashboard</h1>
+            <div class="input-group">
+                <input type="text" id="city-input" placeholder="Enter a city name..." value="New York">
+                <button id="search-btn">Get Weather</button>
+            </div>
+        </header>
+
+        <main>
+            <div id="weather-info" class="weather-info-container">
+                <h2 id="city-name"></h2>
+                <p id="condition"></p>
+                <div class="metrics">
+                    <div class="metric-card">
+                        <h3>Temperature</h3>
+                        <p id="temperature">--</p>
+                    </div>
+                    <div class="metric-card">
+                        <h3>Humidity</h3>
+                        <p id="humidity">--</p>
+                    </div>
+                    <div class="metric-card">
+                        <h3>Wind Speed</h3>
+                        <p id="wind-speed">--</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="chart-container">
+                <canvas id="weatherChart"></canvas>
+            </div>
+        </main>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
